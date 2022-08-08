@@ -9,7 +9,7 @@ function sayHowdy() {
     console.log('Partnah');
   }
   // After thinking it through, uncomment the following line to check your guess!
-  //   testMe(); 
+    // testMe(); *************** partnah will log first because sayHowdy isnt called until the setTimeout has finished.***********************
   // what order should these log out? Howdy or Partnah first?
   
   
@@ -17,10 +17,10 @@ function sayHowdy() {
   
   function delayedGreet() {
     // ADD CODE HERE
-    setTimeout(() => console.log('welcome'),0)
+    setTimeout(() => console.log('welcome'),3000)
   }
   // Uncomment the following line to check your work!
-//   delayedGreet();
+  // delayedGreet();
    // should log (after 3 seconds): welcome
   
   
@@ -29,10 +29,11 @@ function sayHowdy() {
   function helloGoodbye() {
     // ADD CODE HERE
     // should log: hello // should also log (after 2 seconds): good bye
-  
+  console.log('hello')
+  setTimeout(() => console.log('good bye'), 2000)
   }
   // Uncomment the following line to check your work!
-//   helloGoodbye();
+  helloGoodbye();
   
   
   /* CHALLENGE 4 */
